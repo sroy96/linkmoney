@@ -1,25 +1,36 @@
 function TeamSlide() {
+  const base = import.meta.env.BASE_URL;
+
   const team = [
     {
       name: 'SAURAV ROY',
       role: 'CEO',
       description: 'Ex-Razorpay, Acko, Karza, ex-CTO Fridayy.ai, VIT Vellore',
-      image: '/team/saurav.png',
-      logos: ['/logos/razorpay.png', '/logos/acko.png', '/logos/karza.png'],
+      image: `${base}team/saurav.png`,
+      logos: [
+        `${base}logos/razorpay.png`,
+        `${base}logos/acko.png`,
+        `${base}logos/karza.png`,
+      ],
     },
     {
       name: 'DHIRAJ JAIN',
       role: 'CTO',
-      description: 'Ex-Tech Lead AWS, Jio, Maintainer Linux Foundation, VIT Vellore',
-      image: '/team/dhiraj.jpeg',
-      logos: ['/logos/aws.png', '/logos/jio.png'],
+      description:
+        'Ex-Tech Lead AWS, Jio, Maintainer Linux Foundation, VIT Vellore',
+      image: `${base}team/dhiraj.jpeg`,
+      logos: [`${base}logos/aws.png`, `${base}logos/jio.png`],
     },
     {
       name: 'ANISH SAHA',
       role: 'Founding Engineer',
-      description: 'Ex-Founding Engineer Supaki, Ex-Karza, VIT Vellore',
-      image: '/team/anish.jpeg',
-      logos: ['/logos/supaki.jpeg', '/logos/karza.png'],
+      description:
+        'Ex-Founding Engineer Supaki, Ex-Karza, VIT Vellore',
+      image: `${base}team/anish.jpeg`,
+      logos: [
+        `${base}logos/supaki.jpeg`,
+        `${base}logos/karza.png`,
+      ],
     },
   ];
 
